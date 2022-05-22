@@ -35,6 +35,7 @@ React.js プロジェクトを構築。
 
 - initial commit
   ```
+  $ git commit -m "initial commit"
   $ git remote add origin git@github.com:hfujiyos/typescript-frontend.git
   $ git push -u origin main
   ```
