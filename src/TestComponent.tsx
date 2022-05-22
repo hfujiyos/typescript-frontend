@@ -27,12 +27,18 @@ const TestComponent: React.FC<Props> = (props) => {
   // State更新処理（初期値設定）
   const [count, setCount] = useState<number | null>(0);
   const [user, setuser] = useState<UserData>({ id: 1, name: 'dummy' });
+  const [inputData, setInputData] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputData(e.target.value);
+  };
 
   // ﾃｽﾄﾋﾞｭｰ
   return (
     <div>
       <h1>{props.text}</h1>
-      <h1>{count}</h1>
+      <input type='text' value={inputData} onChange={handleInputChange} />
+      <h1>{inputData}</h1>
     </div>
   );
 };
