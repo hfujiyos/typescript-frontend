@@ -58,6 +58,3 @@ React.js プロジェクトを構築。
 ## ディレクトリ構成
 
 ## 参考文献
-
-- [TypeScript の合併型と交差型ついて学ぼう](https://tyotto-good.com/blog/union-intersection-type)
-- [interface と type の違い、そして何を使うべきかについて](https://zenn.dev/luvmini511/articles/6c6f69481c2d17)
