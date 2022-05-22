@@ -5,29 +5,44 @@
 React.js プロジェクトを構築。
 
 - create-react-app
+
   ```
   $ npx create-react-app . --template typescript
   ```
 
-- 開発サーバー起動 
+- プロダクションサーバー起動
   ```
-  $ npm run dev
+  $ npm start
   ```
 
 ### VSCode
 
-- 拡張機能
-  - ES7+ React/Redux/React-Native snippets｜dsznajder
-  - Prettier - Code formatter｜Prettier
+- VSCode 拡張機能
 
-- 設定
+  - ES7+ React/Redux/React-Native snippets ｜ dsznajder
+  - Prettier - Code formatter ｜ Prettier
+
+- VSCode 設定
+
   - Editor: Format On Save
+
+- package.json
+
+  ```
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "printWidth": 80
+  },
+  ```
 
 ### ライブラリ追加
 
 - プロダクションサーバー起動
   ```
-  $ npm run build
   $ npm start
   ```
 
@@ -41,7 +56,5 @@ React.js プロジェクトを構築。
   ```
 
 ## ディレクトリ構成
-
-
 
 ## 参考文献
