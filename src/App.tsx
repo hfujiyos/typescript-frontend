@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Data from './data.json';
+import TestComponent from './TestComponent';
 
 /**
  * 型定義
@@ -222,15 +224,25 @@ const funcGen4 = <T extends PropsAllow>(props: T) => {
 };
 
 /**
+ * 型継承（typeof）
+ * @description JSONﾌｧｲﾙからも型継承可
+ */
+
+// 型継承（typeof）
+type USERS = typeof Data;
+
+/**
  * Appｺﾝﾎﾟｰﾈﾝﾄ
  * @description index.tsxに配置されるｺﾝﾎﾟｰﾈﾝﾄ
  */
-function App() {
+const App: React.FC = () => {
   return (
     <div className='App'>
-      <header className='App-header'></header>
+      <header className='App-header'>
+        <TestComponent text='hello from App' />
+      </header>
     </div>
   );
-}
+};
 
 export default App;

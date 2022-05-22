@@ -57,4 +57,12 @@ React.js プロジェクトを構築。
 
 ## ディレクトリ構成
 
-## 参考文献
+- docdev
+  - typescript.md
+  - generics_props.md
+- src
+  - App.tsx
+  - data.json
+  - TestComponent.tsx
+- package.json
+- README.md
